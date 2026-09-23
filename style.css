@@ -4,12 +4,23 @@
     --tertiary-text: #ffffff80;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 body{
     color: var(--primary-text);
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("image.png");
+    background: linear-gradient(to top, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0.7)), url("image.png");
     background-size: auto, cover;
     background-attachment: fixed, fixed;
     background-position: center, center;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
 }
 
 main {
@@ -28,4 +39,41 @@ main {
     main {
         max-width: 768px;
     }
+}
+
+#heading p,
+#heading a{
+    color: var(--secondary-text)
+}
+
+#heading h1,
+#heading p{
+    margin: 0;
+}
+
+#resume a{
+    color: var(--primary-text);
+}
+
+#resume #ed h2,
+#resume #about h2,
+#resume #work-exp h2{
+    margin-bottom: 2px;
+}
+
+#resume #about p{
+    margin-top: 0;
+    color: var(--secondary-text)
+}
+
+#resume #work-exp p{
+    margin: 0px;
+}
+
+#resume #ed ul,
+#resume #work-exp ul,
+#resume #proj ul
+{
+    margin-top: 2px;
+    color: var(--secondary-text)
 }
