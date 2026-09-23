@@ -7,8 +7,25 @@
 body{
     color: var(--primary-text);
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("image.png");
-    padding: 50px 500px;
     background-size: auto, cover;
     background-attachment: fixed, fixed;
     background-position: center, center;
+}
+
+main {
+    margin: auto;
+    max-width: 768px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+    main {
+        max-width: 768px;
+    }
+}
+@media (min-width: 768px) {
+    main {
+        max-width: 768px;
+    }
 }
