@@ -55,9 +55,11 @@ main {
     color: var(--primary-text);
 }
 
-#resume #ed h2,
-#resume #about h2,
-#resume #work-exp h2{
+#resume .resList a{
+    color: var(--secondary-text);
+}
+
+.resHeader{
     margin-bottom: 2px;
 }
 
@@ -70,10 +72,41 @@ main {
     margin: 0px;
 }
 
-#resume #ed ul,
-#resume #work-exp ul,
-#resume #proj ul
-{
+.resList{
     margin-top: 2px;
-    color: var(--secondary-text)
+    color: var(--secondary-text);
+    padding-left: 19px;
+}
+
+.resList .skills{
+    list-style: none;
+    font-size: 14px;
+    color: var(--tertiary-text)
+}
+
+#resume .resumeSect article .desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+#resume .resumeSect article .right-col p{
+    margin-top: 0;
+}
+
+#resume .resumeSect#ed article .desc .left-col{
+    width: 674px;
+}
+
+#resume .resumeSect#work-exp article .desc .left-col{
+    width: 571px;
+}
+
+#resume .resumeSect#proj article .desc .left-col{
+    width: 545px;
+}
+
+#work-exp .resHeader,
+#proj .resHeader,
+#links .resHeader {
+    margin-top: 5px;
 }
